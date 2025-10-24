@@ -1,26 +1,26 @@
 [
-    {
-        "id": "1",
-        "name":"Budín de arandanos",
-        "price": 6000,
-        "category": "dulce",
-        "description": "Budín húmedo de arandanos",
-        "imagesUrl": "/images/budin de arandanos jpg.png"
-    },
-    {
-        "id": "2",
-        "name": "Sanguches de miga de jamón y queso",
-        "price": 9000,
-        "category":"salado",
-        "description":"Sanguche de miga caseros de jamón y queso",
-        "imagesUrl": "/images/sanguches de miga jyq jpg.png"
-    },
-    {
-        "id": "3",
-        "name": "Torta de frutilla",
-        "price": 8000,
-        "category": "dulce",
-        "description":"Torta húmeda de frutillas orgánicas",
-        "imagesUrl":"/images/torta de frutila jog.png"
-    }
+  {
+    "id": "1",
+    "name": "Budín de arándanos",
+    "price": 6000,
+    "category": "dulce",
+    "description": "Budín húmedo de arándanos",
+    "imageUrl": "/images/budin-arandanos.png"
+  },
+  {
+    "id": "2",
+    "name": "Sánguches de miga de jamón y queso",
+    "price": 9000,
+    "category": "salado",
+    "description": "Sánguches de miga caseros de jamón y queso",
+    "imageUrl": "/images/sanguches-jyq.png"
+  },
+  {
+    "id": "3",
+    "name": "Torta de frutilla",
+    "price": 8000,
+    "category": "dulce",
+    "description": "Torta húmeda de frutillas orgánicas",
+    "imageUrl": "/images/torta-frutilla.png"
+  }
 ]

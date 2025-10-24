@@ -22,7 +22,9 @@ export const ItemDetailContainer = () => {
                     throw new Error("Producto no encontrado");
                 }
             })
-            .catch(() => { })
+            .catch((err) => {
+                console.log(err);
+             });
     }, [id]);
 
     return (
