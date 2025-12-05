@@ -5,12 +5,12 @@
 }
 
 .item-detail-card {
-  background-color: #1e1e1e;
+  background-color: #fcfcfc;
   border: 1px solid #333;
   border-radius: 0.5rem;
   width: 380px; /* tamaño cómodo */
   padding: 1.5rem;
-  color: #f5f5f5;
+  color: #6b6666;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
   text-align: center;
 }
@@ -24,14 +24,14 @@
 
 .item-detail-title {
   font-size: 1.4rem;
-  color: #ffcc66;
+  color: #f5bd4b;
   margin-top: 1rem;
 }
 
 .item-detail-description {
   margin: 1rem 0;
   font-size: 1rem;
-  color: #cccccc;
+  color: #000000;
 }
 
 .item-detail-price {

@@ -7,26 +7,38 @@ import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import { Cart } from "./components/Cart/Cart";
 import { ProductFormContainer } from "./components/adminComponents/ProductFormContainer/ProductFormContainer";
+import { MainLayout } from "./layouts/MainLayout";
+import { AdminLayout } from "./layouts/AdminLayout";
+import { RutaProtegida } from "./components/RutaProtegida/RutaProtegida";
+import { Login } from "./components/Login/Login";
+
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <CartProvider>
-        <Header />
-        <Routes>
-          <Route path="/" 
-          element={<ItemListContainer/>} 
-          />
-          <Route path="/category/:category" 
-          element={<ItemListContainer/>} 
-          />
-          <Route path="/detail/:id" element={<ItemDetailContainer  />}/>
-          <Route path="/Cart" element={<Cart/>}/>
-          <Route path="/admin" element={<ProductFormContainer/>}/>
+        <CartProvider>
+        
+          <Routes>
+            <Route element={<MainLayout />}>
+              <Route path="/" element={<ItemListContainer />} />
+              <Route path="/category/:category" element={<ItemListContainer />} />
+              <Route path="/detail/:id" element={<ItemDetailContainer />} />
+              <Route path="/Cart" element={<Cart />} />
+            </Route>
 
-        </Routes>
-        <Footer/>
+            <Route path="/admin" element={<AdminLayout />}>
+              <Route index element={<Login />} />
+
+              <Route path="alta-productos" element={
+                <RutaProtegida>
+                  <ProductFormContainer />
+                </RutaProtegida>} />
+            </Route>
+
+            {/* <Route path="/admin" element={<ProductFormContainer />} /> */}
+          </Routes>
+          <Footer />
         </CartProvider>
       </BrowserRouter>
     </>

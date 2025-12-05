@@ -7,7 +7,7 @@ export const Nav = () => {
 
   return (
     <nav className="navbar">
-      <div className="titulo">
+    <div className="titulo">
         <Link to={"/"}> <h2>Panaderia Puchi</h2></Link>
       </div>
 

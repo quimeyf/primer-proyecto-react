@@ -1,0 +1,47 @@
+.count-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.count-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.count-buttons span {
+  font-size: 1.2rem;
+  min-width: 35px;
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #cfcfcf;
+}
+
+.btn:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.btn-add {
+  background-color: #f80202;
+  color: white;
+}
+
+.btn-add:hover:not(:disabled) {
+  background-color: #f80202;
+}
