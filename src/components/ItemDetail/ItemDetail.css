@@ -1,0 +1,42 @@
+.item-detail-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.item-detail-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  width: 380px; /* tamaño cómodo */
+  padding: 1.5rem;
+  color: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.item-detail-card img {
+  width: 100%;
+  max-height: 300px;    /* ← evita que ocupe toda la pantalla */
+  object-fit: contain;  /* mantiene proporciones */
+  border-radius: 0.5rem;
+}
+
+.item-detail-title {
+  font-size: 1.4rem;
+  color: #ffcc66;
+  margin-top: 1rem;
+}
+
+.item-detail-description {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.item-detail-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00e676;
+  margin-bottom: 1rem;
+}

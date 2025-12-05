@@ -55,7 +55,15 @@ export const CartProvider = ({ children }) => {
     const total = cart.reduce ((acc, p) => acc + p.price * p.quantity, 0);
 
     return Math.round(total * 100) / 100;
-  }
+  };
+
+  const checkout = () => {
+    const ok = confirm ("¿Seguro que quiere finalizar la compra?")
+    if (ok) {
+      alert("¡Compra realizada con éxito!");
+      clearCart();
+    }
+  };
 
   const values = {
     cart,
@@ -63,7 +71,8 @@ export const CartProvider = ({ children }) => {
     clearCart,
     getTotalItems,
     deleteItem,
-    total
+    total,
+    checkout,
   };
 
   return (

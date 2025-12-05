@@ -1,11 +1,10 @@
-import "./Item.css";
-export const Item = ({ name, price, description, imageUrl, children }) => {
+export const Item = ({ name, price, description, imageUrl, children, className = "" }) => {
     return (
-        <article className="product-item">
+        <article className={`product-item ${className}`}>
             <img src={imageUrl} alt={description} />
             <h2 className="product-title">{name}</h2>
             <p>Precio: ${price}</p>
-            <p>Descripcion {description}</p>
+            <p>Descripción: {description}</p>
             {children}
         </article>
     );

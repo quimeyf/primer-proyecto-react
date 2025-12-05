@@ -5,6 +5,8 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { CartProvider } from "./context/CartContext/CartProvider";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
+import { Cart } from "./components/Cart/Cart";
+import { ProductFormContainer } from "./components/adminComponents/ProductFormContainer/ProductFormContainer";
 
 function App() {
   return (
@@ -16,8 +18,13 @@ function App() {
           <Route path="/" 
           element={<ItemListContainer/>} 
           />
+          <Route path="/category/:category" 
+          element={<ItemListContainer/>} 
+          />
           <Route path="/detail/:id" element={<ItemDetailContainer  />}/>
-          <Route path="/carrito" element={<h1>Carrito</h1>}/>
+          <Route path="/Cart" element={<Cart/>}/>
+          <Route path="/admin" element={<ProductFormContainer/>}/>
+
         </Routes>
         <Footer/>
         </CartProvider>
